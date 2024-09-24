@@ -2,9 +2,10 @@
 
 A simple Python script to monitor APC power usage, and cpu load, memory used. Only use simple command lines, set a user namespace service to run. Ubuntu 22.
 
-1. Install apcupsd package.
+1. Install apcupsd package, and RRDTOOL python module
  ```
    sudo apt  install apcupsd
+   sudo python3 -m pip  rrdtool
 ```
 2. set up user space service.
 
