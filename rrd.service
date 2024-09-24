@@ -1,0 +1,18 @@
+# ~/.config/systemd/user/rrd.service
+#  systemctl --user start rrd
+#  systemctl --user enable rrd
+#  systemctl --user status rrd
+[Unit]
+Description=rrd Service
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+ExecStart= /usr/bin/python3 /home/feng/rrd/rrd-service.py
+Restart=always
+RestartSec=3
+Type=simple
+PrivateTmp=yes
+ProtectSystem=full
+
+[Install]
