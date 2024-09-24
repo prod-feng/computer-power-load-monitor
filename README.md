@@ -9,5 +9,5 @@ A simple Python script to monitor APC power usage, and cpu load, memory used. On
 ```
 2. set up user space service.
 
-You can hen use "rrdtool graph  ..." to read and generate a graph of these metrics.
+You can then use "rrdtool graph  ..." to read and generate a graph of these metrics.
    
